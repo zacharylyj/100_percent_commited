@@ -85,8 +85,31 @@ git push -u origin main
 ```
 
 ## Config Features
+```
+{
+    "start_date": "2005-01-02", //Start date of the commit history
+    "end_date": "2005-12-30", //End date of the commit history
+    "probability_no_weekend_commit": 0.7, //probability that no commits are made on weekends
+    "commit_profiles": [
+        { "min_commits": 0, "max_commits": 0, "probability": 30 }, 
+        { "min_commits": 1, "max_commits": 5, "probability": 55 },
+        { "min_commits": 6, "max_commits": 15, "probability": 12 },
+        { "min_commits": 16, "max_commits": 100, "probability": 3 }
+    ], 
+    //set commit profiles where min to max is the range and the probability is the probability of that range being selected. make sure adds up to 100 didnt do error handling for this 😝
+    "time_clusters": [
+        { "start_hour": 9, "end_hour": 11 },
+        { "start_hour": 13, "end_hour": 16 },
+        { "start_hour": 19, "end_hour": 21 },
+        { "start_hour": 1, "end_hour": 5 }
+    ],
+    //set commit time profiles example you only code from 1-5am and 19-21pm
+    "repo_path": "real-repo-history", //path to the directory containing the commit history
+    "email": "dajohndoe@fake.com", //email for the commit history
+    "name": "dajohndoe" //name for the commit history
 
-
+}
+```
 ## End off
 
 For legal reasons use at your own risk.⚖️ I am not Liable for any damages caused by using this tool. Created as a joke.🤡
