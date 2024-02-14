@@ -1,0 +1,21 @@
+{
+    "start_date": "2005-01-02",
+    "end_date": "2005-12-30",
+    "probability_no_weekend_commit": 0.7,
+    "commit_profiles": [
+        { "min_commits": 0, "max_commits": 0, "probability": 30 },
+        { "min_commits": 1, "max_commits": 5, "probability": 55 },
+        { "min_commits": 6, "max_commits": 15, "probability": 12 },
+        { "min_commits": 16, "max_commits": 100, "probability": 3 }
+    ],
+    "time_clusters": [
+        { "start_hour": 9, "end_hour": 11 },
+        { "start_hour": 13, "end_hour": 16 },
+        { "start_hour": 19, "end_hour": 21 },
+        { "start_hour": 1, "end_hour": 5 }
+    ],
+    "repo_path": "real-repo-history",
+    "email": "dajohndoe@fake.com",
+    "name": "dajohndoe"
+
+}
